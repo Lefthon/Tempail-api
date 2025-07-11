@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tempail API Docs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-zinc-950 text-white p-6">
+  <main class="max-w-2xl mx-auto space-y-6">
+    <h1 class="text-3xl font-bold text-blue-400">📄 Dokumentasi Tempail API</h1>
+
+    <section>
+      <h2 class="text-xl font-semibold">🔧 Endpoint: Buat Email</h2>
+      <code class="block bg-zinc-800 p-3 rounded">GET /api/create-email</code>
+      <p>Menghasilkan email sementara dan token.</p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">📬 Endpoint: Ambil Semua Pesan</h2>
+      <code class="block bg-zinc-800 p-3 rounded">GET /api/messages/:token</code>
+      <p>Mengambil semua pesan dari email berdasarkan token.</p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold">📥 Endpoint: Buka Pesan</h2>
+      <code class="block bg-zinc-800 p-3 rounded">GET /api/message/:id</code>
+      <p>Mengambil detail isi pesan berdasarkan ID.</p>
+    </section>
+
+    <section class="mt-4">
+      <h2 class="text-xl font-semibold text-red-400">⚠️ Rate Limit</h2>
+      <p>⛔ Maksimum: <strong>30 request / menit per IP</strong></p>
+      <p>Jika melebihi, akan muncul kode HTTP <code>429</code></p>
+    </section>
+
+    <div class="mt-6">
+      <a href="/" class="text-blue-300 underline">← Kembali ke Beranda</a>
+    </div>
+  </main>
+</body>
+</html>
